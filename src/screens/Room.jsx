@@ -121,7 +121,7 @@ const RoomPage = () => {
           <video
             autoPlay
             playsInline
-            muted
+            
             height="100px"
             width="200px"
             ref={(ref) => {
@@ -137,7 +137,7 @@ const RoomPage = () => {
           <h1>Remote Stream</h1>
           <video
             autoPlay
-            muted
+            
             playsInline
             height="100px"
             width="200px"
