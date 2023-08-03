@@ -118,23 +118,33 @@ const RoomPage = () => {
       {myStream && (
         <>
           <h1>My Stream</h1>
-          <ReactPlayer
-            playing
+          <video
+            autoPlay
+            playsInline
+            muted
             height="100px"
             width="200px"
-            url={myStream}
+            ref={(ref) => {
+              if (ref) {
+                ref.srcObject = myStream;
+              }
+            }}
           />
         </>
       )}
       {remoteStream && (
         <>
           <h1>Remote Stream</h1>
-          <ReactPlayer
-            playing
-            
+          <video
+            autoPlay
+            playsInline
             height="100px"
             width="200px"
-            url={remoteStream}
+            ref={(ref) => {
+              if (ref) {
+                ref.srcObject = remoteStream;
+              }
+            }}
           />
         </>
       )}
