@@ -137,6 +137,7 @@ const RoomPage = () => {
           <h1>Remote Stream</h1>
           <video
             autoPlay
+            muted
             playsInline
             height="100px"
             width="200px"
